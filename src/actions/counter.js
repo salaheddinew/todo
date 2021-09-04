@@ -3,6 +3,12 @@ const incrementCounter = (data) => ({
   payload: data,
 });
 
+const decrementCounter = (data) => ({
+  type: "supr",
+  payload: data,
+});
+
 export default {
   incrementCounter,
+  decrementCounter,
 };
