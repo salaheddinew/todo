@@ -29,6 +29,9 @@ function App() {
         </Route>
       </Switch>
     </Router>
+    // <div>
+    //   <Index />
+    // </div>
   );
 }
 

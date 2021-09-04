@@ -1,13 +1,14 @@
 import React from "react";
 import { useState } from "react";
 import { useHistory } from "react-router";
+import { useSelector } from "react-redux";
 const Liste = (props) => {
   const history = useHistory();
-
+  const selct = useSelector((state) => state.liste);
   return (
     <div>
       <ul>
-        {props.do.map((element) => {
+        {selct.map((element) => {
           return (
             <li
               onClick={() => {
